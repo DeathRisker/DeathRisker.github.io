@@ -1,6 +1,6 @@
 ---
 title: Feiyu iOS APP
-layout: post
+layout: page
 tags: [iOS]
 ---
 Feiyu is an online part-time outsourced platform app that I wrote for the company [SpeechOcean](http://www.speechocean.com/). Currently unpublished.
