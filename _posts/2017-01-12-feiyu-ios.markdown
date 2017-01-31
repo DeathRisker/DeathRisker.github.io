@@ -3,7 +3,7 @@ title: Feiyu iOS APP
 layout: page
 tags: [iOS]
 ---
-Feiyu is an online outsourced platform app that I wrote for the company [SpeechOcean](http://www.speechocean.com/) locate in Beijing, China. A user can earn money by completing the tasks. I have been developing this for months with countless hours spending on [stackoverflow](stackoverflow.com) and [Swift 3 Documentation](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/).
+Feiyu is an online crowdsourcing platform app that I wrote for the company [SpeechOcean](http://www.speechocean.com/) locate in Beijing, China. A user can earn money by completing the tasks. I have been developing this for months with countless hours spending on [stackoverflow](stackoverflow.com) and [Swift 3 Documentation](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/).
 
 Here are some screenshots:
 
