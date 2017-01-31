@@ -3,12 +3,30 @@ title: Feiyu iOS APP
 layout: page
 tags: [iOS]
 ---
-Feiyu is an online outsourced platform app that I wrote for the company [SpeechOcean](http://www.speechocean.com/). A user can earn money by completing the tasks. I have been developing this for months with countless hours spending on [stackoverflow](stackoverflow.com) and [Swift 3 Documentation](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/).
+Feiyu is an online outsourced platform app that I wrote for the company [SpeechOcean](http://www.speechocean.com/) locate in Beijing, China. A user can earn money by completing the tasks. I have been developing this for months with countless hours spending on [stackoverflow](stackoverflow.com) and [Swift 3 Documentation](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/).
 
 Here are some screenshots:
-![Home screen]({{site.url}}/assets/home_screen.png)
-![Task]({{site.url}}/assets/task_detail.png)
-![Login]({{site.url}}/assets/login.png)
-![Signup]({{site.url}}/assets/signup.png)
-![Help screen]({{site.url}}/assets/help_screen.png)
-![FAQ]({{site.url}}/assets/faq.png)
+
+### 1. Home screen
+
+![Home screen]({{site.url}}/assets/home_screen_resize.png)
+
+### 2. Task
+
+![Task]({{site.url}}/assets/task_detail_resize.png)
+
+### 3. Login
+
+![Login]({{site.url}}/assets/login_resize.png)
+
+### 4. Signup
+
+![Signup]({{site.url}}/assets/signup_resize.png)
+
+### 5. Help page
+
+![Help screen]({{site.url}}/assets/help_screen_resize.png)
+
+### 6. FAQ page
+
+![FAQ]({{site.url}}/assets/faq_resize.png)

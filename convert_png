@@ -1,0 +1,6 @@
+#!/bin/bash
+FILES=assets/*.png
+for f in $FILES
+do
+    convert -resize 360x640 $f ${f%%.*}_resize.png
+done
