@@ -6,12 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Hantong Li's Personal Blog
+title: Hantong Li
 author: Hantong Li
 tagline: iOS/ Web/ Backend Developer University of Waterloo
 email: h324li@.edu.uwaterloo.ca
 description: > # this means to ignore newlines until "baseurl:"
-  I am a 4th year student of University of Waterloo, majoring computer science. Love programming! 
+  I am a 4th year student of University of Waterloo, majoring computer science. Love programming!
 github_username: DeathRisker
 
 # Build settings

@@ -3,6 +3,12 @@ title: Feiyu iOS APP
 layout: page
 tags: [iOS]
 ---
-Feiyu is an online part-time outsourced platform app that I wrote for the company [SpeechOcean](http://www.speechocean.com/). Currently unpublished.
+Feiyu is an online outsourced platform app that I wrote for the company [SpeechOcean](http://www.speechocean.com/). A user can earn money by completing the tasks. I have been developing this for months with countless hours spending on [stackoverflow](stackoverflow.com) and [Swift 3 Documentation](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/).
 
 Here are some screenshots:
+![Home screen]({{site.url}}/assets/home_screen.png)
+![Task]({{site.url}}/assets/task_detail.png)
+![Login]({{site.url}}/assets/login.png)
+![Signup]({{site.url}}/assets/signup.png)
+![Help screen]({{site.url}}/assets/help_screen.png)
+![FAQ]({{site.url}}/assets/faq.png)
