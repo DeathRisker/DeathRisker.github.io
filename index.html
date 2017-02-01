@@ -13,7 +13,7 @@ layout: default
     </h1>
     <div class="post-preview">
         {{ post.content | strip_html | truncate:200 }}
-        <a class="read-more" href="{post.url}">more</a>
+        <a class="read-more" href="{{ post.url | prepend: site.baseurl }}">more</a>
     </div>
     <span class="post-date">Posted on: {{ post.date | date: "%b %-d, %Y" }}</span>
     {% endfor %}
