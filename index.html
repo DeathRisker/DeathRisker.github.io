@@ -4,19 +4,20 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <!--h1 class="page-heading">Posts</h1-->
 
-  <ul class="post-list">
+  <div class="post-list">
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
+    <h1>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+    </h1>
+    <div class="post-preview">
+        {{ post.content | strip_html | truncate:200 }}
+        <a class="read-more" href="{post.url}">more</a>
+    </div>
+    <span class="post-date">Posted on: {{ post.date | date: "%b %-d, %Y" }}</span>
     {% endfor %}
-  </ul>
+</div>
 
   <!--p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p-->
 

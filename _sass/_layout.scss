@@ -184,7 +184,7 @@
     }
 }
 
-.post-meta {
+.post-date {
     font-size: $small-font-size;
     color: $grey-color;
 }
@@ -192,9 +192,19 @@
 .post-link {
     display: block;
     font-size: 24px;
+    color: $title-color;
 }
 
+.post-preview {
+    font-size: 15px;
+    font-style: italic;
+    color: $grey-color-dark
+}
 
+.read-more{
+    font-style: normal;
+    font-size: 15px;
+}
 
 /**
  * Posts

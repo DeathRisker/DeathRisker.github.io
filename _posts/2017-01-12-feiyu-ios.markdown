@@ -1,32 +1,22 @@
 ---
-title: Feiyu iOS APP
+title: Feiyu - online crowdsourcing iOS app
 layout: page
 tags: [iOS]
+images:
+    - name: Home screen
+      link: /assets/home_screen_resize.png
+    - name: Task
+      link: /assets/task_detail_resize.png
+    - name: Login
+      link: /assets/login_resize.png
+    - name: Signup
+      link: /assets/signup_resize.png
+    - name: Help page
+      link: /assets/help_screen_resize.png
+    - name: FAQ page
+      link: /assets/faq_resize.png
 ---
-Feiyu is an online crowdsourcing platform app that I wrote for the company [SpeechOcean](http://www.speechocean.com/) locate in Beijing, China. A user can earn money by completing the tasks. I have been developing this for months with countless hours spending on [stackoverflow](stackoverflow.com) and [Swift 3 Documentation](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/).
+Feiyu is an online crowdsourcing platform app that I wrote for the company [SpeechOcean](http://www.speechocean.com/) locate in Beijing, China. A user can earn money by completing the tasks. I have been developing this for months with countless hours spending on [Stackoverflow](http://stackoverflow.com) and [Swift 3 Documentation](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/).
 
-Here are some screenshots:
-
-### 1. Home screen
-
-![Home screen]({{site.url}}/assets/home_screen_resize.png)
-
-### 2. Task
-
-![Task]({{site.url}}/assets/task_detail_resize.png)
-
-### 3. Login
-
-![Login]({{site.url}}/assets/login_resize.png)
-
-### 4. Signup
-
-![Signup]({{site.url}}/assets/signup_resize.png)
-
-### 5. Help page
-
-![Help screen]({{site.url}}/assets/help_screen_resize.png)
-
-### 6. FAQ page
-
-![FAQ]({{site.url}}/assets/faq_resize.png)
+#### Here are some screenshots:
+{% include gallery.html images=page.images %}
