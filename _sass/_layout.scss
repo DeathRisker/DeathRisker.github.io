@@ -269,3 +269,137 @@
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
 }
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    z-index: 2;
+    color: rgba(255, 255, 255, .6); // Text color
+    background-color: #23354B;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.sidebar a {
+    font-weight: normal;
+    color: inherit;
+}
+
+.sidebar-item {
+    padding: 4rem;
+    font-size: 12px;
+    text-align: left;
+}
+
+.sidebar-title{
+    color: #FCFCFC;
+    font-size: 30px;
+}
+
+.sidebar-nav {
+    //border-bottom: 1px solid rgba(255,255,255,.1);
+    background-color: #293C59;
+}
+
+.sidebar-nav-item {
+    font-size: 15px;
+    display: block;
+    padding: 2rem 4rem;
+    //border-top: 1px solid rgba(255,255,255,.1);
+}
+
+.sidebar-nav-item.active,
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus{
+    text-decoration: none;
+    background-color: #3A4F6B; //Pink
+    border-color: transparent;
+    color: #FCFCFC;
+}
+
+
+
+/* Hide the sidebar checkbox that we toggle with `.sidebar-toggle` */
+.sidebar-checkbox {
+  display: none;
+}
+
+@media (min-width: 30rem) {
+  .sidebar {
+    font-size: .75rem; /* 14px */
+  }
+}
+
+/* Style the `label` that we use to target the `.sidebar-checkbox` */
+.sidebar-toggle {
+  position: absolute;
+  display: block;
+  top:  0.85rem;
+  left: 2rem;
+
+  width: 4rem;
+  padding: 0.5rem .65rem;
+  color: #505050;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.sidebar-toggle:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-bottom: .125rem;
+  border-top: .375rem double;
+  border-bottom: .125rem solid;
+
+  /* Make the border inside the box */
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sidebar-toggle:active,
+#sidebar-checkbox:checked ~ .sidebar-toggle {
+  color: #fff;
+  background-color: #505050;
+}
+
+/* Slide effect
+ *
+ * Handle the sliding effects of the sidebar and content in one spot, seperate
+ * from the default styles.
+ *
+ * As an a heads up, we don't use `transform: translate3d()` here because when
+ * mixed with `position: fixed;` for the sidebar toggle, it creates a new
+ * containing block. Put simply, the fixed sidebar toggle behaves like
+ * `position: absolute;` when transformed.
+ *
+ * Read more about it at http://meyerweb.com/eric/thoughts/2011/09/12/.
+ */
+
+.wrap,
+.sidebar,
+.sidebar-toggle {
+  -webkit-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.wrap,
+.sidebar-toggle {
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+          transition: transform .3s ease-in-out;
+}
+
+#sidebar-checkbox:checked + .sidebar {
+  visibility: visible;
+}
+#sidebar-checkbox:checked ~ .sidebar,
+//#sidebar-checkbox:checked ~ .wrapper,
+#sidebar-checkbox:checked ~ .sidebar-toggle {
+  -webkit-transform: translateX(14rem);
+      -ms-transform: translateX(14rem);
+          transform: translateX(14rem);
+}
