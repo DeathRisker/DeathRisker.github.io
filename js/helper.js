@@ -1,3 +1,8 @@
 function toggleSidebar(checkbox){
-    $("#sidebar").toggle();
+    if(checkbox.checked){
+        $("#sidebar").show();
+    }
+    else {
+        $("#sidebar").hide();
+    }
 }
