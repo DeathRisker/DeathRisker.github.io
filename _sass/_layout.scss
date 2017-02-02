@@ -270,17 +270,19 @@
     transform: scale(1.3);
 }
 
+// Sidebar layouts
 .sidebar {
     position: fixed;
     top: 0;
     left: 0;
-    width: 15%;
+    width: 20%;
     height: 100%;
     z-index: 2;
     color: rgba(255, 255, 255, .6); // Text color
     background-color: #23354B;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    display: none;
 }
 
 .sidebar a {
@@ -321,11 +323,70 @@ a.sidebar-nav-item:focus{
 }
 
 
-
-/* Hide the sidebar checkbox that we toggle with `.sidebar-toggle` */
-.sidebar-checkbox {
-  display: none;
+input[type=checkbox]{
+    transform: scale(1.5);
 }
+
+#menu-checkbox {
+    //width: 50px;
+    //height: 50px;
+    margin: 25px auto 10px 10px;
+    float: left;
+    display: none;
+}
+
+// Menu
+#menu-toggle {
+    z-index: 2;
+    width: 28px;
+    height: 30px;
+    margin: 30px auto 10px 30px;
+    position: absolute;
+    cursor: pointer; // Make it clickable
+
+}
+
+#menu-toggle span:after,
+#menu-toggle span:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -9px;
+}
+#menu-toggle span:after{
+  top: 9px;
+}
+#menu-toggle span {
+  position: relative;
+  display: block;
+}
+
+#menu-toggle span,
+#menu-toggle span:after,
+#menu-toggle span:before {
+  width: 100%;
+  height: 5px;
+  background-color: #888;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+  border-radius: 2px;
+}
+
+/* on activation */
+#menu-checkbox:checked + span {
+  background-color: transparent;
+}
+#menu-checkbox:checked + span:before {
+    transform: rotate(45deg) translate(5px, 5px);
+    background-color: red;
+}
+#menu-checkbox:checked + span:after {
+    transform: rotate(-45deg) translate(7px, -8px);
+    background-color: red;
+}
+
+
+
 
 @media (min-width: 30rem) {
   .sidebar {
@@ -334,38 +395,39 @@ a.sidebar-nav-item:focus{
 }
 
 /* Style the `label` that we use to target the `.sidebar-checkbox` */
-.sidebar-toggle {
-  position: absolute;
-  display: block;
-  top:  0.85rem;
-  left: 2rem;
-
-  width: 4rem;
-  padding: 0.5rem .65rem;
-  color: #505050;
-  background-color: #fff;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.sidebar-toggle:before {
-  display: block;
-  content: "";
-  width: 100%;
-  padding-bottom: .125rem;
-  border-top: .375rem double;
-  border-bottom: .125rem solid;
-
-  /* Make the border inside the box */
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.sidebar-toggle:active,
-#sidebar-checkbox:checked ~ .sidebar-toggle {
-  color: #fff;
-  background-color: #505050;
-}
+//
+// .sidebar-toggle {
+//   position: absolute;
+//   display: block;
+//   top:  0.85rem;
+//   left: 2rem;
+//
+//   width: 4rem;
+//   padding: 0.5rem .65rem;
+//   color: #505050;
+//   background-color: #fff;
+//   border-radius: 4px;
+//   cursor: pointer;
+// }
+// .sidebar-toggle:before {
+//   display: block;
+//   content: "";
+//   width: 100%;
+//   padding-bottom: .125rem;
+//   border-top: .375rem double;
+//   border-bottom: .125rem solid;
+//
+//   /* Make the border inside the box */
+//   -webkit-box-sizing: border-box;
+//      -moz-box-sizing: border-box;
+//           box-sizing: border-box;
+// }
+//
+// .sidebar-toggle:active,
+// #sidebar-checkbox:checked ~ .sidebar-toggle {
+//   color: #fff;
+//   background-color: #505050;
+// }
 
 /* Slide effect
  *
