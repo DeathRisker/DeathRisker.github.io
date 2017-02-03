@@ -15,10 +15,9 @@
     font-weight: 300;
     line-height: 56px;
     letter-spacing: -1px;
-    margin-bottom: 0;
-    margin-left: 0;
+    //margin-bottom: 0;
+    margin-left: 10;
     float: left;
-
     &,
     &:visited {
         color: $grey-color-dark;
@@ -274,15 +273,14 @@
 .sidebar {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 20%;
+    left: -24rem;
+    width: 24rem;
     height: 100%;
     z-index: 2;
     color: rgba(255, 255, 255, .6); // Text color
     background-color: #23354B;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-    display: none;
 }
 
 .sidebar a {
@@ -322,9 +320,10 @@ a.sidebar-nav-item:focus{
     color: #FCFCFC;
 }
 
-
-input[type=checkbox]{
-    transform: scale(1.5);
+@media (min-width: 30rem) {
+  .sidebar {
+    font-size: .75rem; /* 14px */
+  }
 }
 
 #menu-checkbox {
@@ -373,26 +372,31 @@ input[type=checkbox]{
 }
 
 /* on activation */
-#menu-checkbox:checked + span {
+#menu-toggle.on span {
   background-color: transparent;
 }
-#menu-checkbox:checked + span:before {
+#menu-toggle.on span:before {
     transform: rotate(45deg) translate(5px, 5px);
     background-color: red;
 }
-#menu-checkbox:checked + span:after {
+#menu-toggle.on span:after {
     transform: rotate(-45deg) translate(7px, -8px);
     background-color: red;
 }
 
-
-
-
-@media (min-width: 30rem) {
-  .sidebar {
-    font-size: .75rem; /* 14px */
-  }
+#sidebar.on,
+#main-page.on {
+    -webkit-transform: translateX(24rem);
+    -ms-transform: translateX(24rem);
+    transform: translateX(24rem);
 }
+
+
+#main-page {
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
 
 /* Style the `label` that we use to target the `.sidebar-checkbox` */
 //

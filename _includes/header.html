@@ -1,10 +1,15 @@
-<header class="site-header">
-    <label id="menu-toggle"><input type="checkbox" id="menu-checkbox" onchange="toggleSidebar(this)"><span></span></label>
-    <div class="wrapper">
+<header class="site-header" onload="reset()">
+
+    <div class="container-fluid">
     <!--label for="sidebar-checkbox" class="sidebar-toggle"></label-->
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
+    <div class="row">
+        <div class="col-md-1">
+            <label id="menu-toggle" onclick="toggleMenu(this)"><span id="menu-span"></span></label>
+        </div>
+        <div class="col-md-2 col-md-offset-5">
+            <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        </div>
+    </div>
     <nav class="site-nav">
       <!--a href="#" class="menu-icon">
         <svg viewBox="0 0 18 15">
