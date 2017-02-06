@@ -36,12 +36,13 @@ function toggleClass(elem, className) {
     }
 }
 
+
 function toggleMenu(menu){
     toggleClass(menu, 'on');
     var mainPage = document.getElementById("main-page");
-    toggleClass(mainPage, 'on');
+    toggleClass(mainPage, 'slide');
     var sidebar = document.getElementById("sidebar");
-    toggleClass(sidebar, 'on');
+    toggleClass(sidebar, 'slide');
 
     return false;
 }

@@ -6,17 +6,17 @@ layout: post
 tags: [iOS]
 images:
     - name: Home screen
-      link: /assets/home_screen_resize.png
+      link: /assets/feiyu/home_screen_resize.png
     - name: Task
-      link: /assets/task_detail_resize.png
+      link: /assets/feiyu/task_detail_resize.png
     - name: Login
-      link: /assets/login_resize.png
+      link: /assets/feiyu/login_resize.png
     - name: Signup
-      link: /assets/signup_resize.png
+      link: /assets/feiyu/signup_resize.png
     - name: Help page
-      link: /assets/help_screen_resize.png
+      link: /assets/feiyu/help_screen_resize.png
     - name: FAQ page
-      link: /assets/faq_resize.png
+      link: /assets/feiyu/faq_resize.png
 ---
 Feiyu is an online crowdsourcing platform app that I wrote for the company [SpeechOcean](http://www.speechocean.com/) locate in Beijing, China. A user can earn money by completing small tasks. I have been developing for months with countless hours spending on [Stackoverflow](http://stackoverflow.com) and [Swift 3 Documentation](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/).
 
